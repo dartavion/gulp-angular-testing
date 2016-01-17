@@ -2,4 +2,9 @@
 
 var angular = require('angular');
 
-console.log('boo');
+angular
+  .module('app', [
+    'ngAnimate',
+    'ngRoute',
+    'app.dashboard'
+  ]);
