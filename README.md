@@ -1,4 +1,4 @@
-# Very simple project to gain experience using webpack with angular, angular-material, less and testing
+# Simple project to gain exposure using webpack with angular, angular-material, less and testing
 
 ## Technologies used
 * [Webpack](https://webpack.github.io/) - build using commonjs
