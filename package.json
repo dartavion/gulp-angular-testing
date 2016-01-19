@@ -4,6 +4,7 @@
   "description": "Learning exercise",
   "main": "index.js",
   "scripts": {
+    "build": "gulp",
     "test": "karma start",
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",

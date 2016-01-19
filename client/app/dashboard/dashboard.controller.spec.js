@@ -1,5 +1,5 @@
-
 'use strict';
+
 var dashboard = require('./dashboard.controller');
 
 describe('myApp.view1 module', function() {
