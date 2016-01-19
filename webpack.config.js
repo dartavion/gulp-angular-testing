@@ -7,7 +7,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!raw'},
+      {test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate'},
+      {test: /\.less$/, loader: 'style!css!less'},
       {test: /\.html$/, loader: 'raw'}
     ]
   }

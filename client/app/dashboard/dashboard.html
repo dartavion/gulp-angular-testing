@@ -1,0 +1,69 @@
+<div layout="column" layout-fill>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <span>My App's Title</span>
+      <!-- fill up the space between left and right area -->
+      <span flex></span>
+      <md-button>
+        Right Bar Button
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-content>
+    Hello!
+  </md-content>
+</div>
+
+<md-card>
+  <md-card-header>
+    <md-card-avatar>
+      <img class="md-user-avatar" src="avatar.png">
+    </md-card-avatar>
+    <md-card-header-text>
+      <span class="md-title">Title</span>
+      <span class="md-subhead">Sub header</span>
+    </md-card-header-text>
+  </md-card-header>
+  <img ng-src="card-image.png" class="md-card-image" alt="image caption">
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">Card headline</span>
+      <span class="md-subhead">Card subheader</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-actions layout="row" layout-align="start center">
+    <md-button ng-click="vm.openLeftMenu()">Action 1</md-button>
+    <md-button>Action 2</md-button>
+    <md-card-icon-actions>
+      <md-button class="md-icon-button" aria-label="icon">
+        <md-icon md-svg-icon="icon"></md-icon>
+      </md-button>
+    </md-card-icon-actions>
+  </md-card-actions>
+  <md-card-content>
+    <p>
+      Card content
+    </p>
+  </md-card-content>
+</md-card>
+<button ng-click="vm.openLeftMenu()">button</button>
+<div layout="row">
+  <md-sidenav md-component-id="left" class="md-sidenav-left">
+    Left Nav!
+  </md-sidenav>
+  <md-content>
+    Center Content
+    <md-button ng-click="vm.openLeftMenu()">
+      Open Left Menu
+    </md-button>
+  </md-content>
+  <md-sidenav md-component-id="right" md-is-locked-open="$mdMedia('min-width: 333px')" class="md-sidenav-right">
+    <form>
+      <md-input-container>
+        <label for="testInput">Test input</label>
+        <input id="testInput" type="text" ng-model="data" md-autofocus>
+      </md-input-container>
+    </form>
+  </md-sidenav>
+</div>
+<md-progress-circular md-mode="indeterminate"></md-progress-circular>

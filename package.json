@@ -4,7 +4,11 @@
   "description": "Learning exercise",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor protractor.conf.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +21,12 @@
   },
   "homepage": "https://github.com/dartavion/gulp-angular-testing#readme",
   "devDependencies": {
+    "angular-mocks": "^1.4.8",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "browser-sync": "^2.11.1",
     "chai": "^3.4.1",
+    "css-loader": "^0.23.1",
     "gulp": "^3.9.0",
     "gulp-webpack": "^1.5.0",
     "jasmine": "^2.4.1",
@@ -26,13 +35,18 @@
     "karma-chrome-launcher": "^0.2.2",
     "karma-mocha": "^0.2.1",
     "karma-mocha-reporter": "^1.1.5",
+    "karma-phantomjs-launcher": "^0.2.3",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
     "mocha": "^2.3.4",
     "ng-annotate-loader": "^0.1.0",
     "phantomjs": "^1.9.19",
+    "protractor": "^3.0.0",
     "raw-loader": "^0.5.1",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "style-loader": "^0.13.0"
   },
   "dependencies": {
     "angular": "^1.4.8",

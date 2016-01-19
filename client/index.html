@@ -9,12 +9,13 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <base href="/">
-</head>
-<body ng-app="app" ng-strict-di ng-cloak>
 
-<app>
-  Loading...
-</app>
+</head>
+<body layout="row" ng-app="app" ng-cloak layout-fill >
+
+<div class="app">
+  <div ng-view></div>
+</div>
 
 <script src="bundle.js"></script>
 
