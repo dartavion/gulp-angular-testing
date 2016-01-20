@@ -9,7 +9,8 @@ module.exports = {
     loaders: [
       {test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate'},
       {test: /\.less$/, loader: 'style!css!less'},
-      {test: /\.html$/, loader: 'raw'}
+      {test: /\.html$/, loader: 'raw'},
+      {test: /\.(jpe?g|png|gif|svg)$/i, loader:'file'}
     ]
   }
 };

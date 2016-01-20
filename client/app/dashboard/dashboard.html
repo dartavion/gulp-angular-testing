@@ -17,14 +17,14 @@
 <md-card>
   <md-card-header>
     <md-card-avatar>
-      <img class="md-user-avatar" src="avatar.png">
+      <img class="md-user-avatar" src="images/funny.png">
     </md-card-avatar>
     <md-card-header-text>
       <span class="md-title">Title</span>
       <span class="md-subhead">Sub header</span>
     </md-card-header-text>
   </md-card-header>
-  <img ng-src="card-image.png" class="md-card-image" alt="image caption">
+  <img ng-src="images/beach.jpg" class="md-card-image" alt="image caption">
   <md-card-title>
     <md-card-title-text>
       <span class="md-headline">Card headline</span>
@@ -33,7 +33,7 @@
   </md-card-title>
   <md-card-actions layout="row" layout-align="start center">
     <md-button ng-click="vm.openLeftMenu()">Action 1</md-button>
-    <md-button ng-click="vm.ha('neat')">Action 2</md-button>
+    <md-button>Action 2</md-button>
     <md-card-icon-actions>
       <md-button class="md-icon-button" aria-label="icon">
         <md-icon md-svg-icon="icon"></md-icon>
@@ -46,18 +46,9 @@
     </p>
   </md-card-content>
 </md-card>
-<button ng-click="vm.openLeftMenu()">button</button>
+
 <div layout="row">
   <md-sidenav md-component-id="left" class="md-sidenav-left">
-    Left Nav!
-  </md-sidenav>
-  <md-content>
-    Center Content
-    <md-button ng-click="vm.openLeftMenu()">
-      Open Left Menu
-    </md-button>
-  </md-content>
-  <md-sidenav md-component-id="right" md-is-locked-open="$mdMedia('min-width: 333px')" class="md-sidenav-right">
     <form>
       <md-input-container>
         <label for="testInput">Test input</label>
@@ -65,5 +56,6 @@
       </md-input-container>
     </form>
   </md-sidenav>
+
 </div>
 <md-progress-circular md-mode="indeterminate"></md-progress-circular>
