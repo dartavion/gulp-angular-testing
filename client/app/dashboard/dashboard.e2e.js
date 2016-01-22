@@ -7,6 +7,7 @@ describe('dashboard', function() {
       browser.get('/#');
       expect(browser.getTitle()).toBe('Learning Exercise');
     });
+
     it('should have toolbar tools', function() {
       var el = by.css('.md-toolbar-tools');
       expect(browser.isElementPresent(el)).toBe(true);

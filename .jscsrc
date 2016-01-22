@@ -22,7 +22,7 @@
 
   "disallowMultipleLineStrings": true,
   "disallowMixedSpacesAndTabs": true,
-  "disallowTrailingWhitespace": true,
+  "disallowTrailingWhitespace": "ignoreEmptyLines",
   "disallowSpaceAfterPrefixUnaryOperators": true,
   "disallowMultipleVarDecl": null,
 
@@ -63,7 +63,6 @@
   "disallowCommaBeforeLineBreak": null,
   "disallowDanglingUnderscores": null,
   "disallowEmptyBlocks": null,
-  "disallowMultipleLineStrings": null,
   "disallowTrailingComma": null,
   "requireCommaBeforeLineBreak": null,
   "requireDotNotation": null,
